@@ -58,6 +58,10 @@ public class App {
 
         JudeSharp.check();
         DarrenLachance.check();
+
+        Equipo InazumaJapon = new Equipo("Inazuma Japon", "InzJPN");
+        Equipo Raimon = new Equipo("Raimon", "RMN");
+        Equipo LittleGiants = new Equipo("Little Giants", "LTG");
     }
 
     public static Date FechaNacimiento(int ano, int mes, int dia) {
