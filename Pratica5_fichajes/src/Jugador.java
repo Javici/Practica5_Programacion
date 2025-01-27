@@ -95,12 +95,22 @@ public class Jugador {
         Traspasos = this.Traspasos;
     }
 
+    private Equipo Equipo;
+
+    public Equipo getEquipo(){
+        return Equipo;
+    }
+
+    public void Equipo(Equipo Equipo){
+        Equipo=this.Equipo;
+    }
+
     /**
      * Aqui tenemos el constructor
      */
 
     public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
-            Traspasos Traspasos) {
+            Traspasos Traspasos, Equipo Equipo) {
         this.Nombre = Nombre;
         this.Fecha_nacimiento = Fecha_nacimiento;
         this.Posicion = Posicion;
@@ -111,6 +121,7 @@ public class Jugador {
         }
         this.Pais_origen = Pais_origen;
         this.Traspasos = Traspasos;
+        this.Equipo=Equipo;
 
     }
 
