@@ -5,10 +5,6 @@ public class Jugador {
     /**
      * Creamos los atributos de la clase jugadores
      * 
-     * @param nombre
-     * @param fecha_nacimiento
-     * @param posicion
-     * @param dorsal
      */
 
     private String Nombre;
@@ -16,6 +12,11 @@ public class Jugador {
     public String getNombre() {
         return Nombre;
     }
+
+    /**
+     * Setter del Nombre del jugador 
+     * @param Nombre
+     */
 
     public void setNombre(String Nombre) {
         Nombre = this.Nombre;
@@ -27,6 +28,10 @@ public class Jugador {
         return Fecha_nacimiento;
     }
 
+    /**
+     * Setter de laFecha de nacimiento
+     * @param Fecha_nacimiento
+     */
     public void setFecha_nacimiento(Date Fecha_nacimiento) {
         Fecha_nacimiento = this.Fecha_nacimiento;
     }
@@ -36,6 +41,11 @@ public class Jugador {
     public Posiciones getPosicion() {
         return Posicion;
     }
+
+    /**
+     * Setter de la posicion, que son enums
+     * @param Posicion
+     */
 
     public void setposicion(Posiciones Posicion) {
         Posicion = this.Posicion;
@@ -47,6 +57,10 @@ public class Jugador {
         return Dorsal;
     }
 
+    /**
+     * Setter del dorsal del jugador
+     * @param Dorsal
+     */
     public void setDorsal(int Dorsal) {
         Dorsal = this.Dorsal;
     }
@@ -57,6 +71,11 @@ public class Jugador {
         return Pais_origen;
     }
 
+    /**
+     * Setter del pais de origen 
+     * @param Pais_origen
+     */
+
     public void setpais_origen(String Pais_origen) {
         Pais_origen = this.Pais_origen;
     }
@@ -66,6 +85,11 @@ public class Jugador {
     public Traspasos getTraspasos() {
         return Traspasos;
     }
+
+    /**
+     * Setter del estado de los traspasos (enums)
+     * @param Traspasos
+     */
 
     public void setTraspasos(Traspasos Traspasos) {
         Traspasos = this.Traspasos;
@@ -90,6 +114,7 @@ public class Jugador {
 
     }
 
+    
     public void check() {
      System.out.println(
                 Nombre + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
