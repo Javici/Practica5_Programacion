@@ -75,15 +75,8 @@ public class Jugador {
      * Aqui tenemos el constructor
      */
 
-<<<<<<< HEAD:Pratica5_fichajes/src/Jugador.java
     public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
             Traspasos Traspasos) {
-=======
-
-    public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
-            Traspasos Traspasos) {
-
->>>>>>> 76b6cce69686fcff65c5c246a03c3e78326c9249:Pratica5_fichajes/src/jugador.java
         this.Nombre = Nombre;
         this.Fecha_nacimiento = Fecha_nacimiento;
         this.Posicion = Posicion;
@@ -98,15 +91,8 @@ public class Jugador {
     }
 
     public void check() {
-<<<<<<< HEAD:Pratica5_fichajes/src/Jugador.java
-        System.out.println(
+     System.out.println(
                 Nombre + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
-=======
-
-        System.out.println(
-                Nombre + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
-
->>>>>>> 76b6cce69686fcff65c5c246a03c3e78326c9249:Pratica5_fichajes/src/jugador.java
     }
 
 }
