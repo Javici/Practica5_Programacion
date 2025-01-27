@@ -19,5 +19,5 @@ public class Entrenador {
     public void setFormaciones(Formaciones Formaciones){
         Formaciones=this.Formaciones;
     }
-
+ //a ver si detecta esto
 }
