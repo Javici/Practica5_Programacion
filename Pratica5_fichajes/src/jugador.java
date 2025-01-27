@@ -2,15 +2,15 @@
 import java.util.Date;
 
 public class Jugador {
-
     /**
      * Creamos los atributos de la clase jugadores
-     *
+     * 
      * @param nombre
      * @param fecha_nacimiento
      * @param posicion
      * @param dorsal
      */
+
     private String Nombre;
 
     public String getNombre() {
@@ -74,7 +74,9 @@ public class Jugador {
     /**
      * Aqui tenemos el constructor
      */
-    public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen, Traspasos Traspasos) {
+
+    public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
+            Traspasos Traspasos) {
         this.Nombre = Nombre;
         this.Fecha_nacimiento = Fecha_nacimiento;
         this.Posicion = Posicion;
@@ -89,7 +91,8 @@ public class Jugador {
     }
 
     public void check() {
-        System.out.println(Nombre + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
+        System.out.println(
+                Nombre + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
     }
 
 }
