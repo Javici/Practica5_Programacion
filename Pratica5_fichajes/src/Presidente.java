@@ -18,4 +18,5 @@ public class Presidente {
     public void setNombrePresidente(String nombrePresidente){
         nombrePresidente=this.nombrePresidente;
     }
+    //a ver si funciona carajo
 }
