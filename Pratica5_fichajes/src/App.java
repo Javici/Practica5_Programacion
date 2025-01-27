@@ -62,6 +62,8 @@ public class App {
         Equipo InazumaJapon = new Equipo("Inazuma Japon", "InzJPN");
         Equipo Raimon = new Equipo("Raimon", "RMN");
         Equipo LittleGiants = new Equipo("Little Giants", "LTG");
+
+        InazumaJapon.CheckArray();
     }
 
     public static Date FechaNacimiento(int ano, int mes, int dia) {
