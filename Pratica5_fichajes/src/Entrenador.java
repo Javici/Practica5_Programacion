@@ -19,5 +19,22 @@ public class Entrenador {
     public void setFormaciones(Formaciones Formaciones){
         Formaciones=this.Formaciones;
     }
- //a ver si detecta esto
+
+    private Equipo Equipo;
+
+    public Equipo getEquipo(){
+        return Equipo;
+    }
+
+    public void Equipo(Equipo Equipo){
+        Equipo=this.Equipo;
+    }
+
+//constructor
+
+    public Entrenador(String nombreEntrenador, Formaciones Formaciones, Equipo Equipo){
+        this.nombreEntrenador=nombreEntrenador;
+        this.Formaciones=Formaciones;
+        this.Equipo=Equipo;
+    }
 }

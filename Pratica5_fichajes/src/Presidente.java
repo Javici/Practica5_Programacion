@@ -18,5 +18,22 @@ public class Presidente {
     public void setNombrePresidente(String nombrePresidente){
         nombrePresidente=this.nombrePresidente;
     }
-    //a ver si funciona carajo
+
+    private Equipo Equipo;
+
+    public Equipo getEquipo(){
+        return Equipo;
+    }
+
+    public void Equipo(Equipo Equipo){
+        Equipo=this.Equipo;
+    }
+
+    //constructor
+
+    public Presidente(String dni, String nombrePresidente, Equipo Equipo){
+        this.dni=dni;
+        this.nombrePresidente=nombrePresidente;
+        this.Equipo=Equipo;
+    }
 }
