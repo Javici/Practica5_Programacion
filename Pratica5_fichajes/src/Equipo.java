@@ -46,22 +46,38 @@ public class Equipo {
 
 
     private ArrayList <Jugador> ListaJugador;
-    public ArrayList <Jugador> getListaJugador(){
+    public void Lista(){
+        ListaJugador = new ArrayList<>();
+    }
+    public void Anadir(Jugador NombreJugador){
+        ListaJugador.add(NombreJugador);
+    }
+    public void mostrar(){
+        for (int i = 0; i < ListaJugador.size(); i++) {
+            System.out.println(ListaJugador.get(i));
+    }
+}
+public ArrayList <Jugador> getListaJugador(){
+    return ListaJugador;
+}
+public void setListaJugador(ArrayList <Jugador> ListaJugador){
+    this.ListaJugador = ListaJugador;
+}
+
+    
+    /*public ArrayList <Jugador> getListaJugador(){
         return ListaJugador;
     }
 
     public void setListaJugador(ArrayList <Jugador> ListaJugador){
         this.ListaJugador = ListaJugador;
+    }*/
+   
+    public Equipo(String Nombre, String Abreviatura, ArrayList <Jugador> ListaJugador) {
+        this.Nombre = Nombre;
+        this.Abreviatura = Abreviatura;
+        this.ListaJugador = ListaJugador;
     }
 
     
-    public void CheckArray(){
-    ListaJugador.forEach(System.out::println);
-    }
-
-    public Equipo(String Nombre, String Abreviatura) {
-        this.Nombre = Nombre;
-        this.Abreviatura = Abreviatura;
-        }
-
 }
