@@ -4,14 +4,21 @@ import java.util.Date;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        ArrayList <String> ListaJugadorRaimon;
+        ArrayList <String> ListaJugadorInazumaJapon;
+        ArrayList <String> ListaJugadorLittleGiants;
+        
+        ListaJugadorRaimon = new ArrayList<>();
+        ListaJugadorInazumaJapon = new ArrayList<>();
+        ListaJugadorLittleGiants = new ArrayList<>();
         /**
          * Le resto 1 al mes porque estan guardados del 0 al 11 y es mas intuitivo asi
          */
-        Equipo InazumaJapon = new Equipo("Inazuma Japon", "InzJPN", );
+        Equipo InazumaJapon = new Equipo("Inazuma Japon", "InzJPN");
         Equipo Raimon = new Equipo("Raimon", "RMN");
         Equipo LittleGiants = new Equipo("Little Giants", "LTG");
        
-         Jugador MarkEvans = new Jugador("Mark Evans", FechaNacimiento(1999, (5 - 1), 7), Posiciones.Portero, 1,
+        Jugador MarkEvans = new Jugador("Mark Evans", FechaNacimiento(1999, (5 - 1), 7), Posiciones.Portero, 1,
                 "Japon",
                 Traspasos.SIN_SOLICITAR, InazumaJapon);
         Jugador NathanSwift = new Jugador("Nathan Swift", FechaNacimiento(1999, (8 - 1), 20), Posiciones.Defensa, 2,
@@ -63,10 +70,36 @@ public class App {
 
         JudeSharp.check();
         DarrenLachance.check();
-        System.out.println(AxelBlaze);
+        System.out.println(MarkEvans.getEquipo().getNombre());
+
         
         
-        Raimon.mostrar();
+        ListaJugadorInazumaJapon.add("MarkEvans");
+        ListaJugadorInazumaJapon.add("NathanSwift");
+        ListaJugadorInazumaJapon.add("JackWallside");
+        ListaJugadorInazumaJapon.add("ScottBanyan");
+        ListaJugadorInazumaJapon.add("ArcherHawkins");
+        
+        ListaJugadorRaimon.add("CalebStonewall");
+        ListaJugadorRaimon.add("ShawnFrost");
+        ListaJugadorRaimon.add("AxelBlaze");
+        ListaJugadorRaimon.add("AustinHobbes");
+        ListaJugadorRaimon.add("JudeSharp");
+
+        ListaJugadorLittleGiants.add("DavidSamford");
+        ListaJugadorLittleGiants.add("KevinDragonfly");
+        ListaJugadorLittleGiants.add("XavierFoster");
+        ListaJugadorLittleGiants.add("DarrenLachance");
+
+        for (int i = 0; i < ListaJugadorRaimon.size(); i++) {
+                System.out.println(ListaJugadorRaimon.get(i));
+            }
+        
+        ListaJugadorInazumaJapon.toString();
+        ListaJugadorLittleGiants.toString();
+        ListaJugadorRaimon.toString();
+        System.out.println(ListaJugadorInazumaJapon);
+
         
     }
 
