@@ -7,19 +7,19 @@ public class Jugador {
      * 
      */
 
-    private String Nombre;
+    private String NombreJugador;
 
     public String getNombre() {
-        return Nombre;
+        return NombreJugador;
     }
 
     /**
      * Setter del Nombre del jugador 
-     * @param Nombre
+     * @param NombreJugador
      */
 
-    public void setNombre(String Nombre) {
-        Nombre = this.Nombre;
+    public void setNombreJugador(String NombreJugador) {
+        NombreJugador = this.NombreJugador;
     }
 
     private Date Fecha_nacimiento;
@@ -96,22 +96,20 @@ public class Jugador {
     }
 
     private Equipo Equipo;
-
     public Equipo getEquipo(){
         return Equipo;
     }
-
-    public void Equipo(Equipo Equipo){
-        Equipo=this.Equipo;
+    public void setEquipo(Equipo Equipo){
+        Equipo = this.Equipo;
     }
 
     /**
      * Aqui tenemos el constructor
      */
 
-    public Jugador(String Nombre, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
+    public Jugador(String NombreJugador, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
             Traspasos Traspasos, Equipo Equipo) {
-        this.Nombre = Nombre;
+        this.NombreJugador = NombreJugador;
         this.Fecha_nacimiento = Fecha_nacimiento;
         this.Posicion = Posicion;
         if (Dorsal > 0) {
@@ -121,14 +119,17 @@ public class Jugador {
         }
         this.Pais_origen = Pais_origen;
         this.Traspasos = Traspasos;
-        this.Equipo=Equipo;
+        this.Equipo = Equipo;
 
     }
-
+    
     
     public void check() {
      System.out.println(
-                Nombre + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
-    }
+                NombreJugador + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
+                
+            }
+
+    
 
 }

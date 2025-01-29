@@ -44,24 +44,13 @@ public class Equipo {
         this.presidente = presidente;
     }
 
-
-    private ArrayList <Jugador> ListaJugador;
-    public ArrayList <Jugador> getListaJugador(){
-        return ListaJugador;
-    }
-
-    public void setListaJugador(ArrayList <Jugador> ListaJugador){
-        this.ListaJugador = ListaJugador;
-    }
-
-    
-    public void CheckArray(){
-    ListaJugador.forEach(System.out::println);
-    }
-
+   
+   
     public Equipo(String Nombre, String Abreviatura) {
         this.Nombre = Nombre;
         this.Abreviatura = Abreviatura;
-        }
+        
+    }
 
+    
 }
