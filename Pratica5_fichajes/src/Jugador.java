@@ -14,7 +14,8 @@ public class Jugador {
     }
 
     /**
-     * Setter del Nombre del jugador 
+     * Setter del Nombre del jugador
+     * 
      * @param NombreJugador
      */
 
@@ -30,6 +31,7 @@ public class Jugador {
 
     /**
      * Setter de laFecha de nacimiento
+     * 
      * @param Fecha_nacimiento
      */
     public void setFecha_nacimiento(Date Fecha_nacimiento) {
@@ -44,6 +46,7 @@ public class Jugador {
 
     /**
      * Setter de la posicion, que son enums
+     * 
      * @param Posicion
      */
 
@@ -59,6 +62,7 @@ public class Jugador {
 
     /**
      * Setter del dorsal del jugador
+     * 
      * @param Dorsal
      */
     public void setDorsal(int Dorsal) {
@@ -72,7 +76,8 @@ public class Jugador {
     }
 
     /**
-     * Setter del pais de origen 
+     * Setter del pais de origen
+     * 
      * @param Pais_origen
      */
 
@@ -88,6 +93,7 @@ public class Jugador {
 
     /**
      * Setter del estado de los traspasos (enums)
+     * 
      * @param Traspasos
      */
 
@@ -96,10 +102,12 @@ public class Jugador {
     }
 
     private Equipo Equipo;
-    public Equipo getEquipo(){
+
+    public Equipo getEquipo() {
         return Equipo;
     }
-    public void setEquipo(Equipo Equipo){
+
+    public void setEquipo(Equipo Equipo) {
         Equipo = this.Equipo;
     }
 
@@ -122,14 +130,16 @@ public class Jugador {
         this.Equipo = Equipo;
 
     }
-    
-    
-    public void check() {
-     System.out.println(
-                NombreJugador + " " + Fecha_nacimiento + " " + Dorsal + " " + Posicion + " " + Pais_origen + " " + Traspasos);
-                
-            }
 
-    
+    public String toString() {
+
+        return "Los datos del jugador son:\nNombre: " + this.NombreJugador + "\nEquipo: " + this.Equipo.getNombre()
+                + "\nFecha y hora de nacimiento: "
+                + this.Fecha_nacimiento
+                + "\nNúmero de dorsal: " + this.Dorsal + "\nPosición: " + this.Posicion
+                + "\nPaís de origen: " + this.Pais_origen + "\nEstado de la solicitud de traspaso: " + this.Traspasos
+                + "\n\n-----------------------------\n";
+
+    }
 
 }
