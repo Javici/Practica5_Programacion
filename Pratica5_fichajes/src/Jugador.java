@@ -142,4 +142,13 @@ public class Jugador {
 
     }
 
+    public void solicitarTraspaso() {
+        if (Traspasos == Traspasos.SIN_SOLICITAR) {
+            Traspasos = Traspasos.SOLICITADO;
+            System.out.println("Estado cambiado");
+        } else {
+            System.out.println("Error");
+        }
+
+    }
 }
