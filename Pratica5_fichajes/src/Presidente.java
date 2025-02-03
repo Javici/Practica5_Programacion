@@ -39,9 +39,4 @@ public class Presidente {
         this.Equipo = Equipo;
     }
 
-    public String toString() {
-        return "Los datos del presidente son:\nNombre: " + this.nombrePresidente + "\nDNI: " + this.dni
-                + "\nEquipo: "
-                + this.Equipo.getNombre() + "\n\n-----------------------------\n";
-    }
 }
