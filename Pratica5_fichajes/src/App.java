@@ -136,11 +136,13 @@ public class App {
                 // Ej5: modificar fichajes
 
                 Jugador1.solicitarTraspaso();
-                Entrenador1.aceptarTraspaso(Jugador1);
-                Presidente1.rechazarTraspaso(Jugador1);
-                if (Jugador1.Traspaso == APROBADO_POR_ENTRENADOR && Jugador1.Traspaso == APROBADO_POR_PRESIDENTE) {
-                        System.out.println("Joya");
-                }
+                Entrenador1.AprobarPorEntrenador(Jugador1);
+                Presidente1.AprobarPorPresidente(Jugador1);
+                System.out.println(Jugador1.getTraspasos());
+                System.out.println("---------------------");
+                Jugador2.solicitarTraspaso();
+                Entrenador2.AprobarPorEntrenador(Jugador2);
+                Presidente2.RechazarPorPresidente(Jugador2);
 
         }
 
