@@ -45,4 +45,19 @@ public class Entrenador {
                 + "\nEquipo: "
                 + this.Equipo.getNombre() + "\n\n-----------------------------\n";
     }
+
+    public void AprobarPorEntrenador(Jugador Jugador) {
+        if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El entrenador aprueba el fichaje");
+            Jugador.setTraspasos(Traspasos.APROBADO_POR_ENTRENADOR);
+        }
+    }
+
+    public void RechazarPorEntrenador(Jugador Jugador) {
+        if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El entrenador rechaza el fichaje");
+            Jugador.setTraspasos(Traspasos.RECHAZADO_POR_ENTRENADOR);
+        }
+    }
+
 }

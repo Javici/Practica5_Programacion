@@ -39,4 +39,24 @@ public class Presidente {
         this.Equipo = Equipo;
     }
 
+    public String toString() {
+        return "Los datos del presidente son:\nNombre: " + this.nombrePresidente + "\nDNI: "
+                + this.dni
+                + "\nEquipo: "
+                + this.Equipo.getNombre() + "\n\n-----------------------------\n";
+    }
+
+    public void AprobarPorPresidente(Jugador Jugador) {
+        if (Jugador.getTraspasos() == Traspasos.APROBADO_POR_ENTRENADOR && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El presidente aprueba el fichaje");
+            Jugador.setTraspasos(Traspasos.APROBADO_POR_PRESIDENTE);
+        }
+    }
+
+    public void RechazarPorPresidente(Jugador Jugador) {
+        if (Jugador.getTraspasos() == Traspasos.APROBADO_POR_ENTRENADOR && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El presidente rechaza el fichaje");
+            Jugador.setTraspasos(Traspasos.RECHAZADO_POR_PRESIDENTE);
+        }
+    }
 }
