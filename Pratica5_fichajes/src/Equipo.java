@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Equipo {
 
-
     private String Nombre;
 
     public String getNombre() {
@@ -10,7 +9,7 @@ public class Equipo {
     }
 
     public void setNombre(String Nombre) {
-        Nombre = this.Nombre;
+        this.Nombre = Nombre;
     }
 
     private String Abreviatura;
@@ -23,34 +22,30 @@ public class Equipo {
         Abreviatura = this.Abreviatura;
     }
 
-    
     private Entrenador entrenador;
 
-    public Entrenador getEntrenador(){
+    public Entrenador getEntrenador() {
         return entrenador;
     }
 
-    public void setEntrenador (Entrenador entrenador){
+    public void setEntrenador(Entrenador entrenador) {
         this.entrenador = entrenador;
     }
 
     private Presidente presidente;
 
-    public Presidente getPresidente(){
+    public Presidente getPresidente() {
         return presidente;
     }
 
-    public void setPresidente (Presidente presidente){
+    public void setPresidente(Presidente presidente) {
         this.presidente = presidente;
     }
 
-   
-   
     public Equipo(String Nombre, String Abreviatura) {
         this.Nombre = Nombre;
         this.Abreviatura = Abreviatura;
-        
+
     }
 
-    
 }

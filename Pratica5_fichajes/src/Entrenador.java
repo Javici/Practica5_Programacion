@@ -1,6 +1,7 @@
 import java.text.Normalizer.Form;
 
 public class Entrenador {
+
     private String nombreEntrenador;
 
     public String getNombreEntrenador() {
@@ -50,14 +51,17 @@ public class Entrenador {
         if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
             System.out.println("El entrenador aprueba el fichaje");
             Jugador.setTraspasos(Traspasos.APROBADO_POR_ENTRENADOR);
+        } else {
+            System.out.println("Este entrenador no puede decidir sobre el fichaje");
         }
     }
 
     public void RechazarPorEntrenador(Jugador Jugador) {
         if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
-            System.out.println("El entrenador rechaza el fichaje");
+            System.out.println("El entrenador rechaza el fichaje\nEl fichaje queda cancelado");
             Jugador.setTraspasos(Traspasos.RECHAZADO_POR_ENTRENADOR);
+        } else {
+            System.out.println("Este entrenador no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
         }
     }
-
 }

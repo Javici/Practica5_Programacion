@@ -20,79 +20,79 @@ public class App {
 
                 Jugador Jugador1 = new Jugador("Mark Evans", FechaNacimiento(1999, (5 - 1), 7), Posiciones.Portero, 1,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, InazumaJapon);
+                                InazumaJapon);
                 Jugador Jugador2 = new Jugador("Nathan Swift", FechaNacimiento(1999, (8 - 1), 20),
                                 Posiciones.Defensa, 2,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, InazumaJapon);
+                                InazumaJapon);
                 Jugador Jugador3 = new Jugador("Jack Wallside", FechaNacimiento(1999, (10 - 1), 21),
                                 Posiciones.Defensa, 3,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, InazumaJapon);
+                                InazumaJapon);
                 Jugador Jugador4 = new Jugador("Scott Banyan", FechaNacimiento(1999, (7 - 1), 15),
                                 Posiciones.Defensa, 6,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, InazumaJapon);
+                                InazumaJapon);
                 Jugador Jugador5 = new Jugador("Archer Hawkins", FechaNacimiento(1998, (11 - 1), 30),
                                 Posiciones.Defensa,
                                 7,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, InazumaJapon);
+                                InazumaJapon);
                 Jugador Jugador6 = new Jugador("Caleb Stonewall", FechaNacimiento(1998, (8 - 1), 17),
                                 Posiciones.Centrocampista, 8,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, Raimon);
+                                Raimon);
                 Jugador Jugador7 = new Jugador("Shawn Frost", FechaNacimiento(1999, (1 - 1), 7), Posiciones.Delantero,
                                 9,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, Raimon);
+                                Raimon);
                 Jugador Jugador8 = new Jugador("Axel Blaze", FechaNacimiento(1998, (7 - 1), 10), Posiciones.Delantero,
                                 10,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, Raimon);
+                                Raimon);
                 Jugador Jugador9 = new Jugador("Austin Hobbes", FechaNacimiento(2000, (9 - 1), 25),
                                 Posiciones.Delantero,
                                 11,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, Raimon);
+                                Raimon);
                 Jugador Jugador10 = new Jugador("Jude Sharp", FechaNacimiento(1999, (5 - 1), 11),
                                 Posiciones.Centrocampista, 14,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, Raimon);
+                                Raimon);
                 Jugador Jugador11 = new Jugador("David Samford", FechaNacimiento(1999, (6 - 1), 17),
                                 Posiciones.Centrocampista, 16,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, LittleGiants);
+                                LittleGiants);
                 Jugador Jugador12 = new Jugador("Kevin Dragonfly", FechaNacimiento(1998, (2 - 1), 26),
                                 Posiciones.Delantero, 17,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, LittleGiants);
+                                LittleGiants);
                 Jugador Jugador13 = new Jugador("Xavier Foster", FechaNacimiento(1999, (1 - 1), 20),
                                 Posiciones.Centrocampista, 18,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, LittleGiants);
+                                LittleGiants);
                 Jugador Jugador14 = new Jugador("Darren Lachance", FechaNacimiento(1999, (12 - 1), 13),
                                 Posiciones.Portero,
                                 20,
                                 "Japon",
-                                Traspasos.SIN_SOLICITAR, LittleGiants);
+                                LittleGiants);
 
-                ListaJugadorEquipo1.add("Mark Evans");
-                ListaJugadorEquipo1.add("Nathan Swift");
-                ListaJugadorEquipo1.add("Jack Wallside");
-                ListaJugadorEquipo1.add("Scott Banyan");
-                ListaJugadorEquipo1.add("Archer Hawkins");
+                ListaJugadorEquipo1.add(Jugador1.getNombre());
+                ListaJugadorEquipo1.add(Jugador2.getNombre());
+                ListaJugadorEquipo1.add(Jugador3.getNombre());
+                ListaJugadorEquipo1.add(Jugador4.getNombre());
+                ListaJugadorEquipo1.add(Jugador5.getNombre());
 
-                ListaJugadorEquipo2.add("Caleb Stonewall");
-                ListaJugadorEquipo2.add("Shawn Frost");
-                ListaJugadorEquipo2.add("Axel Blaze");
-                ListaJugadorEquipo2.add("Austin Hobbes");
-                ListaJugadorEquipo2.add("Jude Sharp");
+                ListaJugadorEquipo2.add(Jugador6.getNombre());
+                ListaJugadorEquipo2.add(Jugador7.getNombre());
+                ListaJugadorEquipo2.add(Jugador8.getNombre());
+                ListaJugadorEquipo2.add(Jugador9.getNombre());
+                ListaJugadorEquipo2.add(Jugador10.getNombre());
 
-                ListaJugadorEquipo3.add("David Samford");
-                ListaJugadorEquipo3.add("Kevin Dragonfly");
-                ListaJugadorEquipo3.add("Xavier Foster");
-                ListaJugadorEquipo3.add("Darren Lachance");
+                ListaJugadorEquipo3.add(Jugador11.getNombre());
+                ListaJugadorEquipo3.add(Jugador12.getNombre());
+                ListaJugadorEquipo3.add(Jugador13.getNombre());
+                ListaJugadorEquipo3.add(Jugador14.getNombre());
 
                 // Ejercicio 4, toString con ejemplos mediante sout
 
@@ -135,15 +135,19 @@ public class App {
 
                 // Ej5: modificar fichajes
 
-                Jugador1.solicitarTraspaso();
+                Jugador1.solicitarTraspaso(Jugador1); // este primer ejemplo funciona. Puedes cambiar los numeros como
+                                                      // quieras, siempre y cuando sean del mismo equipo
                 Entrenador1.AprobarPorEntrenador(Jugador1);
-                Presidente1.AprobarPorPresidente(Jugador1);
-                System.out.println(Jugador1.getTraspasos());
-                System.out.println("---------------------");
-                Jugador2.solicitarTraspaso();
+                Presidente1.AprobarPorPresidente(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+                System.out.println("\n---------------------\n");
+                Jugador2.solicitarTraspaso(Jugador2); // este segundo ejemplo falla por no ser del equipo adecuado
                 Entrenador2.AprobarPorEntrenador(Jugador2);
-                Presidente2.RechazarPorPresidente(Jugador2);
-
+                Presidente2.RechazarPorPresidente(Jugador2, ListaJugadorEquipo1, ListaJugadorEquipo2);
+                System.out.println("\n---------------------\n");
+                Jugador11.solicitarTraspaso(Jugador11);// este tercer ejemplo funciona, pero es rechazado por el
+                                                       // presidente
+                Entrenador3.AprobarPorEntrenador(Jugador11);
+                Presidente3.RechazarPorPresidente(Jugador11, ListaJugadorEquipo3, ListaJugadorEquipo1);
         }
 
         public static Date FechaNacimiento(int ano, int mes, int dia) {
