@@ -98,7 +98,7 @@ public class Jugador {
      */
 
     public void setTraspasos(Traspasos Traspasos) {
-        Traspasos = this.Traspasos;
+        this.Traspasos = Traspasos;
     }
 
     private Equipo Equipo;
@@ -116,7 +116,7 @@ public class Jugador {
      */
 
     public Jugador(String NombreJugador, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
-            Traspasos Traspasos, Equipo Equipo) {
+            Equipo Equipo) {
         this.NombreJugador = NombreJugador;
         this.Fecha_nacimiento = Fecha_nacimiento;
         this.Posicion = Posicion;
@@ -126,7 +126,7 @@ public class Jugador {
             this.Dorsal = 0;
         }
         this.Pais_origen = Pais_origen;
-        this.Traspasos = Traspasos;
+        this.Traspasos = Traspasos.SIN_SOLICITAR;
         this.Equipo = Equipo;
 
     }
@@ -142,10 +142,10 @@ public class Jugador {
 
     }
 
-    public void solicitarTraspaso() {
+    public void solicitarTraspaso(Jugador Jugador) {
         if (Traspasos == Traspasos.SIN_SOLICITAR) {
             this.Traspasos = Traspasos.SOLICITADO;
-            System.out.println("Estado cambiado");
+            System.out.println("Traspaso solicitado por el jugador " + Jugador.NombreJugador);
         } else {
             System.out.println("Error");
         }
