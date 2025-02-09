@@ -1,13 +1,23 @@
-import java.text.Normalizer.Form;
+package com.Clases;
+
+import com.Enum.*;
 
 public class Entrenador {
-
+    /**
+     * Creamos los atributos de la clase entrenador
+     */
+    private static int contadorEntrenador = 0;
     private String nombreEntrenador;
 
     public String getNombreEntrenador() {
         return nombreEntrenador;
     }
 
+    /**
+     * Setter del nombre del entrenador
+     * 
+     * @param nombreEntrenador
+     */
     public void setNombreEntrenador(String nombreEntrenador) {
         nombreEntrenador = this.nombreEntrenador;
     }
@@ -18,6 +28,11 @@ public class Entrenador {
         return Formaciones;
     }
 
+    /**
+     * Setter de la formacion del entrenador
+     * 
+     * @param Formaciones
+     */
     public void setFormaciones(Formaciones Formaciones) {
         Formaciones = this.Formaciones;
     }
@@ -28,16 +43,28 @@ public class Entrenador {
         return Equipo;
     }
 
-    public void Equipo(Equipo Equipo) {
+    /**
+     * Setter del equipo del entrenador
+     * 
+     * @param Equipo
+     */
+    public void setEquipo(Equipo Equipo) {
         Equipo = this.Equipo;
     }
 
-    // constructor
+    /**
+     * Constructor del entrenador
+     * 
+     * @param nombreEntrenador
+     * @param Formaciones
+     * @param Equipo
+     */
 
     public Entrenador(String nombreEntrenador, Formaciones Formaciones, Equipo Equipo) {
         this.nombreEntrenador = nombreEntrenador;
         this.Formaciones = Formaciones;
         this.Equipo = Equipo;
+        contadorEntrenador++;
     }
 
     public String toString() {
@@ -63,5 +90,9 @@ public class Entrenador {
         } else {
             System.out.println("Este entrenador no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
         }
+    }
+
+    public static int getContadorEntrenador() {
+        return contadorEntrenador;
     }
 }
