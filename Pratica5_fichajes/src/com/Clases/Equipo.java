@@ -81,6 +81,8 @@ public class Equipo {
 
     }
 
+    // contador del numero de equipos
+
     public static int getContadorEquipo() {
         return contadorEquipo;
     }

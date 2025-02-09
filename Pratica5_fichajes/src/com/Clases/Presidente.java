@@ -77,6 +77,11 @@ public class Presidente {
                 + this.Equipo.getNombre() + "\n\n-----------------------------\n";
     }
 
+    /**
+     * Funciones para aprobar o rechazar el traspaso de un jugador despues de que lo
+     * haya aprobado el entrenador
+     */
+
     public void AprobarPorPresidente(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
         if (Jugador.getTraspasos() == Traspasos.APROBADO_POR_ENTRENADOR && Jugador.getEquipo() == this.Equipo) {
             System.out.println("El presidente aprueba el fichaje");
@@ -98,6 +103,8 @@ public class Presidente {
             System.out.println("Este presidente no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
         }
     }
+
+    // contador del numero de presidentes
 
     public static int getContadorPresidente() {
         return contadorPresidente;
