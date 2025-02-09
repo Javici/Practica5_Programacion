@@ -15,15 +15,12 @@ public class App {
                 ListaJugadorEquipo1 = new ArrayList<>();
                 ListaJugadorEquipo2 = new ArrayList<>();
                 ListaJugadorEquipo3 = new ArrayList<>();
-
+                /**
+                 * Le resto 1 al mes porque estan guardados del 0 al 11 y es mas intuitivo asi
+                 */
                 Equipo InazumaJapon = new Equipo("Inazuma Japon", "InzJPN");
                 Equipo Raimon = new Equipo("Raimon", "RMN");
                 Equipo LittleGiants = new Equipo("Little Giants", "LTG");
-
-                /**
-                 * Declaramos los jugadores con todos sus atributos
-                 * Le resto 1 al mes porque estan guardados del 0 al 11 y es mas intuitivo asi
-                 */
 
                 Jugador Jugador1 = new Jugador("Mark Evans", FechaNacimiento(1999, (5 - 1), 7), Posiciones.Portero, 1,
                                 "Japon",

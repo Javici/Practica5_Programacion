@@ -153,10 +153,6 @@ public class Jugador {
 
     }
 
-    /**
-     * Funcion para cambiar el estado de traspaso a solicitado
-     */
-
     public void solicitarTraspaso(Jugador Jugador) {
         if (Traspasos == Traspasos.SIN_SOLICITAR) {
             this.Traspasos = Traspasos.SOLICITADO;
@@ -166,8 +162,6 @@ public class Jugador {
         }
 
     }
-
-    // contador del numero de jugadores
 
     public static int getContadorJugador() {
         return contadorJugador;

@@ -74,11 +74,6 @@ public class Entrenador {
                 + this.Equipo.getNombre() + "\n\n-----------------------------\n";
     }
 
-    /**
-     * Funciones para aprobar o rechazar el traspaso de un jugador que lo haya
-     * solicitado
-     */
-
     public void AprobarPorEntrenador(Jugador Jugador) {
         if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
             System.out.println("El entrenador aprueba el fichaje");
@@ -96,8 +91,6 @@ public class Entrenador {
             System.out.println("Este entrenador no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
         }
     }
-
-    // contador del numero de entrenadores
 
     public static int getContadorEntrenador() {
         return contadorEntrenador;
