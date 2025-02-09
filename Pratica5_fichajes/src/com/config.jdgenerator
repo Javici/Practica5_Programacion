@@ -1,0 +1,314 @@
+==== CONFIGS ====		
+{
+    "base_path": "c:\\Users\\Javier\\Documents\\Practica5_Programacion\\Pratica5_fichajes\\src\\com",
+    "out": "c:\\Users\\Javier\\Documents\\Practica5_Programacion\\Pratica5_fichajes\\src\\com\\javadoc",
+    "javadoc_executable": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot\\bin\\javadoc.exe",
+    "exclude": [],
+    "raw_params": ""
+}
+
+==== COMMAND ====
+"C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\javadoc.exe" 
+	-sourcepath "c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com" 
+	-d "c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc" 
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java"
+	"c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java"
+
+
+==== JAVADOC OUTPUT ====
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java...
+Loading source file c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java...
+Constructing Javadoc information...
+Building index for all the packages and classes...
+Standard Doclet version 21.0.4+7-LTS
+Building tree for all the packages and classes...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\App.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java:17: warning: use of default constructor, which does not provide a comment
+public class App {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java:209: warning: no comment
+        public static Date FechaNacimiento(int ano, int mes, int dia) {
+                           ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java:18: warning: no comment
+        public static void main(String[] args) throws Exception {
+                           ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\App.java:195: warning: no comment
+        public static void resetearTraspaso(Jugador[] Jugadores) {
+                           ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\Entrenador.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:58: warning: no description for @param
+     * @param nombreEntrenador
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:59: warning: no description for @param
+     * @param Formaciones
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:60: warning: no description for @param
+     * @param Equipo
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:19: warning: no description for @param
+     * @param nombreEntrenador
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:34: warning: no description for @param
+     * @param Formaciones
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:49: warning: no description for @param
+     * @param Equipo
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:82: warning: no @param for Jugador
+    public void AprobarPorEntrenador(Jugador Jugador) {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:5: warning: no comment
+public class Entrenador {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:102: warning: no comment
+    public static int getContadorEntrenador() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:42: warning: no comment
+    public Equipo getEquipo() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:27: warning: no comment
+    public Formaciones getFormaciones() {
+                       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:12: warning: no comment
+    public String getNombreEntrenador() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Entrenador.java:91: warning: no comment
+    public void RechazarPorEntrenador(Jugador Jugador) {
+                ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\Equipo.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:74: warning: no description for @param
+     * @param Nombre
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:75: warning: no description for @param
+     * @param Abreviatura
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:20: warning: no description for @param
+     * @param Nombre
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:35: warning: no description for @param
+     * @param Abreviatura
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:50: warning: no description for @param
+     * @param entrenador
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:65: warning: no description for @param
+     * @param presidente
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:6: warning: no comment
+public class Equipo {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:28: warning: no comment
+    public String getAbreviatura() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:86: warning: no comment
+    public static int getContadorEquipo() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:43: warning: no comment
+    public Entrenador getEntrenador() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:13: warning: no comment
+    public String getNombre() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Equipo.java:58: warning: no comment
+    public Presidente getPresidente() {
+                      ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Enum\Formaciones.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:3: warning: no comment
+public enum Formaciones {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:9: warning: no comment
+    _344,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:11: warning: no comment
+    _352,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:12: warning: no comment
+    _4321,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:8: warning: no comment
+    _434,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:10: warning: no comment
+    _442,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Formaciones.java:13: warning: no comment
+    _532;
+    ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\Jugador.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:120: warning: no description for @param
+     * @param NombreJugador
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:121: warning: no description for @param
+     * @param Fecha_nacimiento
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:122: warning: no description for @param
+     * @param Posicion
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:123: warning: no description for @param
+     * @param Dorsal
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:124: warning: no description for @param
+     * @param Pais_origen
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:125: warning: no description for @param
+     * @param Equipo
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:22: warning: no description for @param
+     * @param NombreJugador
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:38: warning: no description for @param
+     * @param Fecha_nacimiento
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:53: warning: no description for @param
+     * @param Posicion
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:69: warning: no description for @param
+     * @param Dorsal
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:84: warning: no description for @param
+     * @param Pais_origen
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:100: warning: no description for @param
+     * @param Traspasos
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:160: warning: no @param for Jugador
+    public void solicitarTraspaso(Jugador Jugador) {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:6: warning: no comment
+public class Jugador {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:172: warning: no comment
+    public static int getContadorJugador() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:62: warning: no comment
+    public int getDorsal() {
+               ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:109: warning: no comment
+    public Equipo getEquipo() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:31: warning: no comment
+    public Date getFecha_nacimiento() {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:15: warning: no comment
+    public String getNombre() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:77: warning: no comment
+    public String getPais_origen() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:46: warning: no comment
+    public Posiciones getPosicion() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:93: warning: no comment
+    public Traspasos getTraspasos() {
+                     ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Jugador.java:113: warning: no comment
+    public void setEquipo(Equipo Equipo) {
+                ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Enum\Posiciones.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java:3: warning: no comment
+public enum Posiciones {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java:9: warning: no comment
+    Centrocampista,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java:8: warning: no comment
+    Defensa,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Posiciones.java:10: warning: no comment
+    Delantero;
+    ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\Presidente.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:61: warning: no description for @param
+     * @param dni
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:62: warning: no description for @param
+     * @param nombrePresidente
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:63: warning: no description for @param
+     * @param Equipo
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:22: warning: no description for @param
+     * @param dni
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:37: warning: no description for @param
+     * @param nombrePresidente
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:52: warning: no description for @param
+     * @param Equipo
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:85: warning: no @param for Jugador
+    public void AprobarPorPresidente(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:85: warning: no @param for lista1
+    public void AprobarPorPresidente(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:85: warning: no @param for lista2
+    public void AprobarPorPresidente(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+                ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:6: warning: no comment
+public class Presidente {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:109: warning: no comment
+    public static int getContadorPresidente() {
+                      ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:15: warning: no comment
+    public String getdni() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:45: warning: no comment
+    public Equipo getEquipo() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:30: warning: no comment
+    public String getNombrePresidente() {
+                  ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Clases\Presidente.java:98: warning: no comment
+    public void RechazarPorPresidente(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+                ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Enum\Traspasos.html...
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:3: warning: no comment
+public enum Traspasos {
+       ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:9: warning: no comment
+    APROBADO_POR_ENTRENADOR,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:10: warning: no comment
+    APROBADO_POR_PRESIDENTE,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:11: warning: no comment
+    RECHAZADO_POR_ENTRENADOR,
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:12: warning: no comment
+    RECHAZADO_POR_PRESIDENTE;
+    ^
+c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\Enum\Traspasos.java:8: warning: no comment
+    SOLICITADO,
+    ^
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\package-summary.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\package-tree.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\package-summary.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Clases\package-tree.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Enum\package-summary.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\com\Enum\package-tree.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\overview-tree.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\index.html...
+Building index for all classes...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\allclasses-index.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\allpackages-index.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\index-all.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\search.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\overview-summary.html...
+Generating c:\Users\Javier\Documents\Practica5_Programacion\Pratica5_fichajes\src\com\javadoc\help-doc.html...
+84 warnings
+
+
