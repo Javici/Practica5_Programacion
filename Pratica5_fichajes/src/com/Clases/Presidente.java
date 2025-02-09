@@ -1,7 +1,14 @@
-import java.text.Normalizer.Form;
+package com.Clases;
+
+import com.Enum.*;
 import java.util.ArrayList;
 
 public class Presidente {
+    /**
+     * Creamos los atributos de la clase presidente
+     * 
+     */
+    private static int contadorPresidente = 0;
     private String dni;
     private Traspasos Traspasos;
 
@@ -9,6 +16,11 @@ public class Presidente {
         return dni;
     }
 
+    /**
+     * Setter del dni del presidente
+     * 
+     * @param dni
+     */
     public void setdni(String dni) {
         dni = this.dni;
     }
@@ -19,6 +31,11 @@ public class Presidente {
         return nombrePresidente;
     }
 
+    /**
+     * Setter del nombre del presidente
+     * 
+     * @param nombrePresidente
+     */
     public void setNombrePresidente(String nombrePresidente) {
         nombrePresidente = this.nombrePresidente;
     }
@@ -29,16 +46,28 @@ public class Presidente {
         return Equipo;
     }
 
-    public void Equipo(Equipo Equipo) {
+    /**
+     * Setter del equipo del presidente
+     * 
+     * @param Equipo
+     */
+    public void setEquipo(Equipo Equipo) {
         Equipo = this.Equipo;
     }
 
-    // constructor
+    /**
+     * Constructor del presidente
+     * 
+     * @param dni
+     * @param nombrePresidente
+     * @param Equipo
+     */
 
     public Presidente(String dni, String nombrePresidente, Equipo Equipo) {
         this.dni = dni;
         this.nombrePresidente = nombrePresidente;
         this.Equipo = Equipo;
+        contadorPresidente++;
     }
 
     public String toString() {
@@ -68,5 +97,9 @@ public class Presidente {
         } else {
             System.out.println("Este presidente no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
         }
+    }
+
+    public static int getContadorPresidente() {
+        return contadorPresidente;
     }
 }

@@ -1,3 +1,7 @@
+package com;
+
+import com.Clases.*;
+import com.Enum.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -148,6 +152,20 @@ public class App {
                                                        // presidente
                 Entrenador3.AprobarPorEntrenador(Jugador11);
                 Presidente3.RechazarPorPresidente(Jugador11, ListaJugadorEquipo3, ListaJugadorEquipo1);
+
+                // Ej6: contador estatico
+
+                System.out.println(
+                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Jugador es: "
+                                                + Jugador.getContadorJugador());
+                System.out.println(
+                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Equipo es: "
+                                                + Equipo.getContadorEquipo());
+                System.out.println("\n---------------------\n\nEl numero de clases instanciadas de tipo Entrenador es: "
+                                + Entrenador.getContadorEntrenador());
+                System.out.println(
+                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Presidente es: "
+                                                + Presidente.getContadorPresidente());
         }
 
         public static Date FechaNacimiento(int ano, int mes, int dia) {

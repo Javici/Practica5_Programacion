@@ -1,4 +1,9 @@
+package com.Enum;
+
 public enum Traspasos {
+    /**
+     * Lista enum de los traspasos
+     */
     SIN_SOLICITAR,
     SOLICITADO,
     APROBADO_POR_ENTRENADOR,

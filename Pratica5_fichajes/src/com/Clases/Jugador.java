@@ -1,4 +1,6 @@
+package com.Clases;
 
+import com.Enum.*;
 import java.util.Date;
 
 public class Jugador {
@@ -7,6 +9,7 @@ public class Jugador {
      * 
      */
 
+    private static int contadorJugador = 0;
     private String NombreJugador;
 
     public String getNombre() {
@@ -30,7 +33,7 @@ public class Jugador {
     }
 
     /**
-     * Setter de laFecha de nacimiento
+     * Setter de la Fecha de nacimiento
      * 
      * @param Fecha_nacimiento
      */
@@ -112,7 +115,14 @@ public class Jugador {
     }
 
     /**
-     * Aqui tenemos el constructor
+     * Constrcutor del jugador
+     * 
+     * @param NombreJugador
+     * @param Fecha_nacimiento
+     * @param Posicion
+     * @param Dorsal
+     * @param Pais_origen
+     * @param Equipo
      */
 
     public Jugador(String NombreJugador, Date Fecha_nacimiento, Posiciones Posicion, int Dorsal, String Pais_origen,
@@ -128,6 +138,7 @@ public class Jugador {
         this.Pais_origen = Pais_origen;
         this.Traspasos = Traspasos.SIN_SOLICITAR;
         this.Equipo = Equipo;
+        contadorJugador++;
 
     }
 
@@ -150,5 +161,9 @@ public class Jugador {
             System.out.println("Error");
         }
 
+    }
+
+    public static int getContadorJugador() {
+        return contadorJugador;
     }
 }
