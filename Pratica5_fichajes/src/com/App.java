@@ -156,6 +156,16 @@ public class App {
                 Entrenador3.AprobarPorEntrenador(Jugador11);
                 Presidente3.RechazarPorPresidente(Jugador11, ListaJugadorEquipo3, ListaJugadorEquipo1);
 
+                // Funcion para resetear las peticiones
+
+                Jugador[] Jugadores = { Jugador1, Jugador2, Jugador3, Jugador4, Jugador5, Jugador6, Jugador7, Jugador8,
+                                Jugador9, Jugador10, Jugador11, Jugador12, Jugador13, Jugador14 };
+
+                resetearTraspaso(Jugadores);
+
+                // System.out.println("El estado del jugador ha sido cambiado a:
+                // "+Jugador.Traspasos);
+
                 // Ej6: contador estatico
 
                 System.out.println(
@@ -169,6 +179,19 @@ public class App {
                 System.out.println(
                                 "\n---------------------\n\nEl numero de clases instanciadas de tipo Presidente es: "
                                                 + Presidente.getContadorPresidente());
+        }
+
+        public static void resetearTraspaso(Jugador[] Jugadores) {
+                for (Jugador Jugador : Jugadores) {
+                        if (Jugador.getTraspasos() != Traspasos.SIN_SOLICITAR) {
+                                Jugador.setTraspasos(Traspasos.SIN_SOLICITAR);
+                                System.out.println(
+                                                "\n---------------------\n\nEl estado del jugador "
+                                                                + Jugador.getNombre()
+                                                                + " ha sido cambiado a: "
+                                                                + Jugador.getTraspasos());
+                        }
+                }
         }
 
         public static Date FechaNacimiento(int ano, int mes, int dia) {
