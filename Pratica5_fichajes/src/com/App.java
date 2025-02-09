@@ -6,6 +6,14 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 
+ * Esta es la practica 5 del grupo 1
+ * 
+ * @version 1.0
+ * @author Javier Lujan y Javier Uya
+ */
+
 public class App {
         public static void main(String[] args) throws Exception {
                 ArrayList<String> ListaJugadorEquipo1;
@@ -155,6 +163,9 @@ public class App {
                                                        // presidente
                 Entrenador3.AprobarPorEntrenador(Jugador11);
                 Presidente3.RechazarPorPresidente(Jugador11, ListaJugadorEquipo3, ListaJugadorEquipo1);
+                System.out.println("\n---------------------\n");
+                Jugador10.solicitarTraspaso(Jugador10);// este cuarto ejemplo es recahzado por el entrenador
+                Entrenador2.RechazarPorEntrenador(Jugador10);
 
                 // Funcion para resetear las peticiones
 
@@ -183,7 +194,8 @@ public class App {
 
         public static void resetearTraspaso(Jugador[] Jugadores) {
                 for (Jugador Jugador : Jugadores) {
-                        if (Jugador.getTraspasos() != Traspasos.SIN_SOLICITAR) {
+                        if (Jugador.getTraspasos() == Traspasos.RECHAZADO_POR_ENTRENADOR
+                                        || Jugador.getTraspasos() == Traspasos.RECHAZADO_POR_PRESIDENTE) {
                                 Jugador.setTraspasos(Traspasos.SIN_SOLICITAR);
                                 System.out.println(
                                                 "\n---------------------\n\nEl estado del jugador "
