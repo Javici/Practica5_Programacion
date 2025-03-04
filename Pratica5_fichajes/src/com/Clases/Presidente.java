@@ -1,9 +1,10 @@
 package com.Clases;
 
+import java.util.Date;
 import com.Enum.*;
 import java.util.ArrayList;
 
-public class Presidente {
+public class Presidente extends Trabajador {
     /**
      * Creamos los atributos de la clase presidente
      * 
@@ -25,36 +26,6 @@ public class Presidente {
         dni = this.dni;
     }
 
-    private String nombrePresidente;
-
-    public String getNombrePresidente() {
-        return nombrePresidente;
-    }
-
-    /**
-     * Setter del nombre del presidente
-     * 
-     * @param nombrePresidente
-     */
-    public void setNombrePresidente(String nombrePresidente) {
-        nombrePresidente = this.nombrePresidente;
-    }
-
-    private Equipo Equipo;
-
-    public Equipo getEquipo() {
-        return Equipo;
-    }
-
-    /**
-     * Setter del equipo del presidente
-     * 
-     * @param Equipo
-     */
-    public void setEquipo(Equipo Equipo) {
-        Equipo = this.Equipo;
-    }
-
     /**
      * Constructor del presidente
      * 
@@ -63,10 +34,10 @@ public class Presidente {
      * @param Equipo
      */
 
-    public Presidente(String dni, String nombrePresidente, Equipo Equipo) {
+    public Presidente(String dni, Date FechaNacimiento, String PaisOrigen, String nombrePresidente, Equipo Equipo,
+            TipoTrabajador TipoTrabajador) {
         this.dni = dni;
-        this.nombrePresidente = nombrePresidente;
-        this.Equipo = Equipo;
+        super(FechaNacimiento, PaisOrigen, nombrePresidente, Equipo, TipoTrabajador);
         contadorPresidente++;
     }
 

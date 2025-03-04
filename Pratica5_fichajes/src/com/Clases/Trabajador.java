@@ -13,14 +13,14 @@ public abstract class Trabajador {
         this.Nombre = Nombre;
     }
 
-    protected Date Fecha_nacimiento;
+    protected Date FechaNacimiento;
 
-    public Date getFecha_nacimiento() {
-        return Fecha_nacimiento;
+    public Date getFechaNacimiento() {
+        return FechaNacimiento;
     }
 
-    public void setFecha_nacimiento(Date Fecha_nacimiento) {
-        this.Fecha_nacimiento = Fecha_nacimiento;
+    public void setFechaNacimiento(Date FechaNacimiento) {
+        this.FechaNacimiento = FechaNacimiento;
     }
 
     protected String Pais;
@@ -29,8 +29,8 @@ public abstract class Trabajador {
         return Pais;
     }
 
-    public void setPais(String Pais) {
-        this.Pais = Pais;
+    public void setPais(String PaisOrigen) {
+        this.PaisOrigen = PaisOrigen;
     }
 
     protected String Equipo;
@@ -43,26 +43,27 @@ public abstract class Trabajador {
         this.Equipo = Equipo;
     }
 
-    protected String Tipo;
+    protected String TipoTrabajador;
 
-    public String getTipo() {
-        return Tipo;
+    public String getTipoTrabajador() {
+        return TipoTrabajador;
     }
 
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
+    public void setTipoTrabajador(String TipoTrabajador) {
+        this.TipoTrabajador = TipoTrabajador;
     }
 
-    public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
-        if (Pais.equals(Pais)) {
-            System.out.println("Mismo pais");
-
-        } else {
-            System.out.println("Distinto pais");
-        }
-
-    }
-
-    public abstract String mostrarInfo(String Nombre, String Tipo);
-
+    /*
+     * public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
+     * if (PaisOrigen.equals(PaisOrigen)) {
+     * System.out.println("Mismo pais");
+     * 
+     * } else {
+     * System.out.println("Distinto pais");
+     * }
+     * 
+     * }
+     * 
+     * public abstract String mostrarInfo(String Nombre, String Tipo);
+     */
 }

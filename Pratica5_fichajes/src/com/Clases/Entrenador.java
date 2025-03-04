@@ -1,27 +1,29 @@
 package com.Clases;
 
+import java.util.Date;
 import com.Enum.*;
 
-public class Entrenador {
+public class Entrenador extends Trabajador {
     /**
      * Creamos los atributos de la clase entrenador
-     */
-    private static int contadorEntrenador = 0;
-    private String nombreEntrenador;
-
-    public String getNombreEntrenador() {
-        return nombreEntrenador;
-    }
-
-    /**
+     * 
+     * private static int contadorEntrenador = 0;
+     * private String nombreEntrenador;
+     * 
+     * public String getNombreEntrenador() {
+     * return nombreEntrenador;
+     * }
+     * 
+     * 
      * Setter del nombre del entrenador
      * 
      * @param nombreEntrenador
+     * 
+     *                         public void setNombreEntrenador(String
+     *                         nombreEntrenador) {
+     *                         nombreEntrenador = this.nombreEntrenador;
+     *                         }
      */
-    public void setNombreEntrenador(String nombreEntrenador) {
-        nombreEntrenador = this.nombreEntrenador;
-    }
-
     private Formaciones Formaciones;
 
     public Formaciones getFormaciones() {
@@ -37,33 +39,11 @@ public class Entrenador {
         Formaciones = this.Formaciones;
     }
 
-    private Equipo Equipo;
-
-    public Equipo getEquipo() {
-        return Equipo;
-    }
-
-    /**
-     * Setter del equipo del entrenador
-     * 
-     * @param Equipo
-     */
-    public void setEquipo(Equipo Equipo) {
-        Equipo = this.Equipo;
-    }
-
-    /**
-     * Constructor del entrenador
-     * 
-     * @param nombreEntrenador
-     * @param Formaciones
-     * @param Equipo
-     */
-
-    public Entrenador(String nombreEntrenador, Formaciones Formaciones, Equipo Equipo) {
-        this.nombreEntrenador = nombreEntrenador;
+    public Entrenador(String nombreEntrenador, Date FechaNacimiento, String PaisOrigen,
+            Formaciones Formaciones, Equipo Equipo, TipoTrabajador TipoTrabajador) {
+        super(nombreEntrenador, FechaNacimiento, PaisOrigen, Equipo, TipoTrabajador);
         this.Formaciones = Formaciones;
-        this.Equipo = Equipo;
+        this.TipoTrabajador = TipoTrabajador;
         contadorEntrenador++;
     }
 
