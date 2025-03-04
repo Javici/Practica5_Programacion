@@ -35,62 +35,62 @@ public class App {
 
                 Jugador Jugador1 = new Jugador("Mark Evans", FechaNacimiento(1999, (5 - 1), 7), Posiciones.Portero, 1,
                                 "Japon",
-                                InazumaJapon);
+                                InazumaJapon, TipoTrabajador.Jugador);
                 Jugador Jugador2 = new Jugador("Nathan Swift", FechaNacimiento(1999, (8 - 1), 20),
                                 Posiciones.Defensa, 2,
                                 "Japon",
-                                InazumaJapon);
+                                InazumaJapon, TipoTrabajador.Jugador);
                 Jugador Jugador3 = new Jugador("Jack Wallside", FechaNacimiento(1999, (10 - 1), 21),
                                 Posiciones.Defensa, 3,
                                 "Japon",
-                                InazumaJapon);
+                                InazumaJapon, TipoTrabajador.Jugador);
                 Jugador Jugador4 = new Jugador("Scott Banyan", FechaNacimiento(1999, (7 - 1), 15),
                                 Posiciones.Defensa, 6,
                                 "Japon",
-                                InazumaJapon);
+                                InazumaJapon, TipoTrabajador.Jugador);
                 Jugador Jugador5 = new Jugador("Archer Hawkins", FechaNacimiento(1998, (11 - 1), 30),
                                 Posiciones.Defensa,
                                 7,
                                 "Japon",
-                                InazumaJapon);
+                                InazumaJapon, TipoTrabajador.Jugador);
                 Jugador Jugador6 = new Jugador("Caleb Stonewall", FechaNacimiento(1998, (8 - 1), 17),
                                 Posiciones.Centrocampista, 8,
                                 "Japon",
-                                Raimon);
+                                Raimon, TipoTrabajador.Jugador);
                 Jugador Jugador7 = new Jugador("Shawn Frost", FechaNacimiento(1999, (1 - 1), 7), Posiciones.Delantero,
                                 9,
                                 "Japon",
-                                Raimon);
+                                Raimon, TipoTrabajador.Jugador);
                 Jugador Jugador8 = new Jugador("Axel Blaze", FechaNacimiento(1998, (7 - 1), 10), Posiciones.Delantero,
                                 10,
                                 "Japon",
-                                Raimon);
+                                Raimon, TipoTrabajador.Jugador);
                 Jugador Jugador9 = new Jugador("Austin Hobbes", FechaNacimiento(2000, (9 - 1), 25),
                                 Posiciones.Delantero,
                                 11,
                                 "Japon",
-                                Raimon);
+                                Raimon, TipoTrabajador.Jugador);
                 Jugador Jugador10 = new Jugador("Jude Sharp", FechaNacimiento(1999, (5 - 1), 11),
                                 Posiciones.Centrocampista, 14,
                                 "Japon",
-                                Raimon);
+                                Raimon, TipoTrabajador.Jugador);
                 Jugador Jugador11 = new Jugador("David Samford", FechaNacimiento(1999, (6 - 1), 17),
                                 Posiciones.Centrocampista, 16,
                                 "Japon",
-                                LittleGiants);
+                                LittleGiants, TipoTrabajador.Jugador);
                 Jugador Jugador12 = new Jugador("Kevin Dragonfly", FechaNacimiento(1998, (2 - 1), 26),
                                 Posiciones.Delantero, 17,
                                 "Japon",
-                                LittleGiants);
+                                LittleGiants, TipoTrabajador.Jugador);
                 Jugador Jugador13 = new Jugador("Xavier Foster", FechaNacimiento(1999, (1 - 1), 20),
                                 Posiciones.Centrocampista, 18,
                                 "Japon",
-                                LittleGiants);
+                                LittleGiants, TipoTrabajador.Jugador);
                 Jugador Jugador14 = new Jugador("Darren Lachance", FechaNacimiento(1999, (12 - 1), 13),
                                 Posiciones.Portero,
                                 20,
                                 "Japon",
-                                LittleGiants);
+                                LittleGiants, TipoTrabajador.Jugador);
 
                 ListaJugadorEquipo1.add(Jugador1.getNombre());
                 ListaJugadorEquipo1.add(Jugador2.getNombre());
@@ -114,15 +114,17 @@ public class App {
                 System.out.println("\n-----------------------------\n");
 
                 // toString de datos de jugadores
-
-                System.out.println(Jugador6.toString()); // todos los datos del jugador 6, por ejemplo
-                System.out.println(Jugador3.getEquipo().getNombre() + "\n\n-----------------------------\n"); // consulta
-                                                                                                              // del
-                                                                                                              // equipo
-                                                                                                              // del
-                                                                                                              // jugador
-                                                                                                              // 3
-
+                /*
+                 * System.out.println(Jugador6.toString()); // todos los datos del jugador 6,
+                 * por ejemplo
+                 * System.out.println(Jugador3.getEquipo().getNombreEquipo() +
+                 * "\n\n-----------------------------\n"); // consulta
+                 * // del
+                 * // equipo
+                 * // del
+                 * // jugador
+                 * // 3
+                 */
                 // toString de la lista de jugadores
                 ListaJugadorEquipo1.toString();
                 ListaJugadorEquipo3.toString();
@@ -134,76 +136,32 @@ public class App {
                 System.out.println("La lista de jugadores del Little Giants es: " + ListaJugadorEquipo3
                                 + "\n\n-----------------------------\n");
                 // toString de los datos de presidentes
-                Presidente Presidente1 = new Presidente("987654321Z", "Camelia Travis", InazumaJapon);
-                Presidente Presidente2 = new Presidente("7539514862D", "Silvia Woods", Raimon);
-                Presidente Presidente3 = new Presidente("123456789A", "Nelly Raimon", LittleGiants);
+                Presidente Presidente1 = new Presidente("987654321Z", FechaNacimiento(1999, (5 - 1), 7), "Japon",
+                                "Camelia Travis", InazumaJapon,
+                                TipoTrabajador.Presidente);
+                Presidente Presidente2 = new Presidente("7539514862D", FechaNacimiento(1999, (5 - 1), 7), "Japon",
+                                "Silvia Woods", Raimon,
+                                TipoTrabajador.Presidente);
+                Presidente Presidente3 = new Presidente("123456789A", FechaNacimiento(1999, (5 - 1), 7), "Japon",
+                                "Nelly Raimon", LittleGiants,
+                                TipoTrabajador.Presidente);
                 System.out.println(Presidente1.toString());
                 System.out.println(Presidente2.toString());
                 System.out.println(Presidente3.toString());
                 // toString de la lista de entrenadores
-                Entrenador Entrenador1 = new Entrenador("Percival Travis", Formaciones._434, InazumaJapon);
-                Entrenador Entrenador2 = new Entrenador("Seymour Hillman", Formaciones._352, Raimon);
-                Entrenador Entrenador3 = new Entrenador("David Evans", Formaciones._4321, LittleGiants);
+                Entrenador Entrenador1 = new Entrenador("Percival Travis", FechaNacimiento(1999, (5 - 1), 7),
+                                "Japon", Formaciones._434, InazumaJapon,
+                                TipoTrabajador.Entrenador);
+                Entrenador Entrenador2 = new Entrenador("Seymour Hillman", FechaNacimiento(1999, (5 - 1), 7),
+                                "Japon", Formaciones._352, Raimon,
+                                TipoTrabajador.Entrenador);
+                Entrenador Entrenador3 = new Entrenador("David Evans", FechaNacimiento(1999, (5 - 1), 7),
+                                "Japon", Formaciones._4321, LittleGiants,
+                                TipoTrabajador.Entrenador);
                 System.out.println(Entrenador1.toString());
                 System.out.println(Entrenador2.toString());
                 System.out.println(Entrenador3.toString());
 
-                // Ej5: modificar fichajes
-
-                Jugador1.solicitarTraspaso(Jugador1); // este primer ejemplo funciona. Puedes cambiar los numeros como
-                                                      // quieras, siempre y cuando sean del mismo equipo
-                Entrenador1.AprobarPorEntrenador(Jugador1);
-                Presidente1.AprobarPorPresidente(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
-                System.out.println("\n---------------------\n");
-                Jugador2.solicitarTraspaso(Jugador2); // este segundo ejemplo falla por no ser del equipo adecuado
-                Entrenador2.AprobarPorEntrenador(Jugador2);
-                Presidente2.RechazarPorPresidente(Jugador2, ListaJugadorEquipo1, ListaJugadorEquipo2);
-                System.out.println("\n---------------------\n");
-                Jugador11.solicitarTraspaso(Jugador11);// este tercer ejemplo funciona, pero es rechazado por el
-                                                       // presidente
-                Entrenador3.AprobarPorEntrenador(Jugador11);
-                Presidente3.RechazarPorPresidente(Jugador11, ListaJugadorEquipo3, ListaJugadorEquipo1);
-                System.out.println("\n---------------------\n");
-                Jugador10.solicitarTraspaso(Jugador10);// este cuarto ejemplo es recahzado por el entrenador
-                Entrenador2.RechazarPorEntrenador(Jugador10);
-
-                // Funcion para resetear las peticiones
-
-                Jugador[] Jugadores = { Jugador1, Jugador2, Jugador3, Jugador4, Jugador5, Jugador6, Jugador7, Jugador8,
-                                Jugador9, Jugador10, Jugador11, Jugador12, Jugador13, Jugador14 };
-
-                resetearTraspaso(Jugadores);
-
-                // System.out.println("El estado del jugador ha sido cambiado a:
-                // "+Jugador.Traspasos);
-
-                // Ej6: contador estatico
-
-                System.out.println(
-                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Jugador es: "
-                                                + Jugador.getContadorJugador());
-                System.out.println(
-                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Equipo es: "
-                                                + Equipo.getContadorEquipo());
-                System.out.println("\n---------------------\n\nEl numero de clases instanciadas de tipo Entrenador es: "
-                                + Entrenador.getContadorEntrenador());
-                System.out.println(
-                                "\n---------------------\n\nEl numero de clases instanciadas de tipo Presidente es: "
-                                                + Presidente.getContadorPresidente());
-        }
-
-        public static void resetearTraspaso(Jugador[] Jugadores) {
-                for (Jugador Jugador : Jugadores) {
-                        if (Jugador.getTraspasos() == Traspasos.RECHAZADO_POR_ENTRENADOR
-                                        || Jugador.getTraspasos() == Traspasos.RECHAZADO_POR_PRESIDENTE) {
-                                Jugador.setTraspasos(Traspasos.SIN_SOLICITAR);
-                                System.out.println(
-                                                "\n---------------------\n\nEl estado del jugador "
-                                                                + Jugador.getNombre()
-                                                                + " ha sido cambiado a: "
-                                                                + Jugador.getTraspasos());
-                        }
-                }
         }
 
         public static Date FechaNacimiento(int ano, int mes, int dia) {
