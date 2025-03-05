@@ -53,9 +53,9 @@ public class Jugador extends Trabajador {
         this.Traspasos = Traspasos;
     }
 
-    public Jugador(String NombreJugador, Date FechaNacimiento, Posiciones Posicion, int Dorsal, String PaisOrigen,
+    public Jugador(String Nombre, Date FechaNacimiento, Posiciones Posicion, int Dorsal, String Pais,
             Equipo Equipo, TipoTrabajador TipoTrabajador) {
-        super(NombreJugador, FechaNacimiento, PaisOrigen, TipoTrabajador);
+        super(Nombre, FechaNacimiento, Pais, Equipo, TipoTrabajador);
         this.Posicion = Posicion;
         if (Dorsal > 0) {
             this.Dorsal = Dorsal;
@@ -63,19 +63,17 @@ public class Jugador extends Trabajador {
             this.Dorsal = 0;
         }
         this.Traspasos = Traspasos.SIN_SOLICITAR;
-        this.TipoTrabajador = TipoTrabajador;
-        this.Equipo = Equipo;
         contadorJugador++;
 
     }
 
     public String toString() {
 
-        return "Los datos del jugador son:\nNombre: " + this.NombreJugador + "\nEquipo: " + this.Equipo.getNombre()
+        return "Los datos del jugador son:\nNombre: " + this.Nombre + "\nEquipo: " + this.Equipo.getNombre()
                 + "\nFecha y hora de nacimiento: "
-                + this.Fecha_nacimiento
+                + this.FechaNacimiento
                 + "\nNúmero de dorsal: " + this.Dorsal + "\nPosición: " + this.Posicion
-                + "\nPaís de origen: " + this.PaisOrigen + "\nEstado de la solicitud de traspaso: " + this.Traspasos
+                + "\nPaís de origen: " + this.Pais + "\nEstado de la solicitud de traspaso: " + this.Traspasos
                 + "\n\n-----------------------------\n";
 
     }
@@ -87,7 +85,7 @@ public class Jugador extends Trabajador {
     public void solicitarTraspaso(Jugador Jugador) {
         if (Traspasos == Traspasos.SIN_SOLICITAR) {
             this.Traspasos = Traspasos.SOLICITADO;
-            System.out.println("Traspaso solicitado por el jugador " + Jugador.NombreJugador);
+            System.out.println("Traspaso solicitado por el jugador " + Jugador.Nombre);
         } else {
             System.out.println("Error");
         }
@@ -99,4 +97,5 @@ public class Jugador extends Trabajador {
     public static int getContadorJugador() {
         return contadorJugador;
     }
+
 }

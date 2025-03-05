@@ -34,15 +34,15 @@ public class Presidente extends Trabajador {
      * @param Equipo
      */
 
-    public Presidente(String dni, Date FechaNacimiento, String PaisOrigen, String nombrePresidente, Equipo Equipo,
-            TipoTrabajador TipoTrabajador) {
+    public Presidente(String dni, String Nombre, Date FechaNacimiento, String Pais,
+            Equipo Equipo, TipoTrabajador TipoTrabajador) {
+        super(Nombre, FechaNacimiento, Pais, Equipo, TipoTrabajador);
         this.dni = dni;
-        super(FechaNacimiento, PaisOrigen, nombrePresidente, Equipo, TipoTrabajador);
         contadorPresidente++;
     }
 
     public String toString() {
-        return "Los datos del presidente son:\nNombre: " + this.nombrePresidente + "\nDNI: "
+        return "Los datos del presidente son:\nNombre: " + this.Nombre + "\nDNI: "
                 + this.dni
                 + "\nEquipo: "
                 + this.Equipo.getNombre() + "\n\n-----------------------------\n";
