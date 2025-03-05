@@ -24,6 +24,8 @@ public class Entrenador extends Trabajador {
      *                         nombreEntrenador = this.nombreEntrenador;
      *                         }
      */
+
+    private static int contadorEntrenador = 0;
     private Formaciones Formaciones;
 
     public Formaciones getFormaciones() {

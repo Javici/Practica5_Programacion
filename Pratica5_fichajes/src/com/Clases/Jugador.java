@@ -6,6 +6,8 @@ import java.util.Date;
 
 public class Jugador extends Trabajador {
 
+    private static int contadorJugador = 0;
+
     private Posiciones Posicion;
 
     public Posiciones getPosicion() {
