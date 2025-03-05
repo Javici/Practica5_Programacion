@@ -2,6 +2,8 @@ package com.Clases;
 
 import java.util.Date;
 
+import com.Enum.TipoTrabajador;
+
 public abstract class Trabajador {
     protected String Nombre;
 
@@ -29,33 +31,41 @@ public abstract class Trabajador {
         return Pais;
     }
 
-    public void setPais(String PaisOrigen) {
-        this.PaisOrigen = PaisOrigen;
+    public void setPais(String Pais) {
+        this.Pais = Pais;
     }
 
-    protected String Equipo;
+    protected Equipo Equipo;
 
-    public String getEquipo() {
+    public Equipo getEquipo() {
         return Equipo;
     }
 
-    public void setEquipo(String Equipo) {
+    public void setEquipo(Equipo Equipo) {
         this.Equipo = Equipo;
     }
 
-    protected String TipoTrabajador;
+    protected TipoTrabajador TipoTrabajador;
 
-    public String getTipoTrabajador() {
+    public TipoTrabajador getTipoTrabajador() {
         return TipoTrabajador;
     }
 
-    public void setTipoTrabajador(String TipoTrabajador) {
+    public void setTipoTrabajador(TipoTrabajador TipoTrabajador) {
+        this.TipoTrabajador = TipoTrabajador;
+    }
+
+    public Trabajador(String Nombre, Date FechaNacimiento, String Pais, Equipo Equipo, TipoTrabajador TipoTrabajador) {
+        this.Nombre = Nombre;
+        this.FechaNacimiento = FechaNacimiento;
+        this.Equipo = Equipo;
+        this.Pais = Pais;
         this.TipoTrabajador = TipoTrabajador;
     }
 
     /*
      * public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
-     * if (PaisOrigen.equals(PaisOrigen)) {
+     * if (Pais.equals(Pais)) {
      * System.out.println("Mismo pais");
      * 
      * } else {
@@ -66,4 +76,5 @@ public abstract class Trabajador {
      * 
      * public abstract String mostrarInfo(String Nombre, String Tipo);
      */
+
 }

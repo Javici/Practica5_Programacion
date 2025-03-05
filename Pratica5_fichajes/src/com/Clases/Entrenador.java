@@ -43,12 +43,11 @@ public class Entrenador extends Trabajador {
             Formaciones Formaciones, Equipo Equipo, TipoTrabajador TipoTrabajador) {
         super(nombreEntrenador, FechaNacimiento, PaisOrigen, Equipo, TipoTrabajador);
         this.Formaciones = Formaciones;
-        this.TipoTrabajador = TipoTrabajador;
         contadorEntrenador++;
     }
 
     public String toString() {
-        return "Los datos del entrenador son:\nNombre: " + this.nombreEntrenador + "\nFormación insiginia: "
+        return "Los datos del entrenador son:\nNombre: " + this.Nombre + "\nFormación insiginia: "
                 + this.Formaciones
                 + "\nEquipo: "
                 + this.Equipo.getNombre() + "\n\n-----------------------------\n";
