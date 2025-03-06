@@ -136,14 +136,17 @@ public class App {
                 System.out.println("La lista de jugadores del Little Giants es: " + ListaJugadorEquipo3
                                 + "\n\n-----------------------------\n");
                 // toString de los datos de presidentes
-                Presidente Presidente1 = new Presidente("987654321Z", FechaNacimiento(1999, (5 - 1), 7), "Japon",
-                                "Camelia Travis", InazumaJapon,
+                Presidente Presidente1 = new Presidente("987654321Z", "Camelia Travis",
+                                FechaNacimiento(1999, (5 - 1), 7), "Japon",
+                                InazumaJapon,
                                 TipoTrabajador.Presidente);
-                Presidente Presidente2 = new Presidente("7539514862D", FechaNacimiento(1999, (5 - 1), 7), "Japon",
-                                "Silvia Woods", Raimon,
+                Presidente Presidente2 = new Presidente("7539514862D", "Silvia Woods",
+                                FechaNacimiento(1999, (5 - 1), 7), "Japon",
+                                Raimon,
                                 TipoTrabajador.Presidente);
-                Presidente Presidente3 = new Presidente("123456789A", FechaNacimiento(1999, (5 - 1), 7), "Japon",
-                                "Nelly Raimon", LittleGiants,
+                Presidente Presidente3 = new Presidente("123456789A", "Nelly Raimon", FechaNacimiento(1999, (5 - 1), 7),
+                                "Japon",
+                                LittleGiants,
                                 TipoTrabajador.Presidente);
                 System.out.println(Presidente1.toString());
                 System.out.println(Presidente2.toString());

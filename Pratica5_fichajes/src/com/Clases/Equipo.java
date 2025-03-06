@@ -8,19 +8,19 @@ public class Equipo {
      * Declaracion de los atributos de la clase equipo
      */
     private static int contadorEquipo = 0;
-    private String NombreEquipo;
+    private String Nombre;
 
-    public String getNombreEquipo() {
-        return NombreEquipo;
+    public String getNombre() {
+        return Nombre;
     }
 
     /**
      * Setter del nombre del equipo
      * 
-     * @param NombreEquipo
+     * @param Nombre
      */
-    public void setNombre(String NombreEquipo) {
-        this.NombreEquipo = NombreEquipo;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
     private String Abreviatura;
@@ -74,8 +74,8 @@ public class Equipo {
      * @param NombreEquipo
      * @param Abreviatura
      */
-    public Equipo(String NombreEquipo, String Abreviatura) {
-        this.NombreEquipo = NombreEquipo;
+    public Equipo(String Nombre, String Abreviatura) {
+        this.Nombre = Nombre;
         this.Abreviatura = Abreviatura;
         contadorEquipo++;
 
