@@ -61,20 +61,19 @@ public abstract class Trabajador {
         this.Equipo = Equipo;
         this.Pais = Pais;
         this.TipoTrabajador = TipoTrabajador;
+
     }
 
-    /*
-     * public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
-     * if (Pais.equals(Pais)) {
-     * System.out.println("Mismo pais");
-     * 
-     * } else {
-     * System.out.println("Distinto pais");
-     * }
-     * 
-     * }
-     * 
-     * public abstract String mostrarInfo(String Nombre, String Tipo);
-     */
+    public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
+        if (Pais.equals(Pais)) {
+            System.out.println("Mismo pais");
+
+        } else {
+            System.out.println("Distinto pais");
+        }
+
+    }
+
+    // public abstract String mostrarInfo(String Nombre, String Tipo);
 
 }
