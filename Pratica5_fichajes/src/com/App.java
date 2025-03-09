@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * 
- * Esta es la practica 5 del grupo 1
+ * Esta es la practica 6 del grupo 1
  * 
  * @version 1.0
  * @author Javier Lujan y Javier Uya
@@ -92,6 +92,8 @@ public class App {
                                 "Japon",
                                 LittleGiants, TipoTrabajador.Jugador);
 
+                // Añadimos a los jugadores a los arrays de sus equipos
+
                 ListaJugadorEquipo1.add(Jugador1.getNombre());
                 ListaJugadorEquipo1.add(Jugador2.getNombre());
                 ListaJugadorEquipo1.add(Jugador3.getNombre());
@@ -114,6 +116,7 @@ public class App {
                 ListaJugadorEquipo1.toString();
                 ListaJugadorEquipo3.toString();
                 ListaJugadorEquipo2.toString();
+
                 System.out.println("La lista de jugadores del Inazuma Japón es: " + ListaJugadorEquipo1
                                 + "\n\n-----------------------------\n");
                 System.out.println("La lista de jugadores del Raimon es: " + ListaJugadorEquipo2
@@ -133,6 +136,7 @@ public class App {
                                 "Japon",
                                 LittleGiants,
                                 TipoTrabajador.Presidente);
+
                 System.out.println(Presidente1.toString());
                 System.out.println(Presidente2.toString());
                 System.out.println(Presidente3.toString());
@@ -154,9 +158,11 @@ public class App {
 
                 boolean nacionalidad = Jugador1.mismaNacionalidad(Entrenador3);
                 if (nacionalidad) {
-                        System.out.println("Estos trabajadores comparten la misma nacionalidad");
+                        System.out.println(
+                                        "Estos trabajadores comparten la misma nacionalidad\n\n-----------------------------\n");
                 } else {
-                        System.out.println("Estos trabajadores no comparten la misma nacionalidad");
+                        System.out.println(
+                                        "Estos trabajadores no comparten la misma nacionalidad\n\n-----------------------------\n");
                 }
 
                 // comprobaciones Ej 2: mostrarInfo
@@ -165,18 +171,34 @@ public class App {
                 Entrenador2.mostrarInfo();
                 Presidente3.mostrarInfo();
 
-                // Ejercicio 4: gestionar traspasos por interfaz
+                /*
+                 * Ejercicio 4: gestionar traspasos por interfaz
+                 * En este primer caso el jugador 1 solicita su traspaso
+                 * y despues lo vuelve a solicitar pero no le deja porque ya no esta en ese
+                 * equipo
+                 */
 
-                System.out.println("////////////" + Jugador1.getEquipo().getNombre());
                 Jugador1.solicitarTraspaso(Jugador1);
-                Entrenador1.AprobarPorEntrenador(Jugador1);
-                Presidente1.AprobarPorPresidente(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
-                System.out.println("////////////" + Jugador1.getEquipo().getNombre());
+                Entrenador1.apobarTraspaso(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+                Presidente1.apobarTraspaso(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+
+                Jugador1.solicitarTraspaso(Jugador1);
+                Entrenador1.apobarTraspaso(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+                Presidente1.apobarTraspaso(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+
+                /*
+                 * En este segundo caso el jugador 6 solicita el traspaso pero el presidente lo
+                 * rechaza
+                 */
+
+                Jugador6.solicitarTraspaso(Jugador6);
+                Entrenador2.apobarTraspaso(Jugador6, ListaJugadorEquipo2, ListaJugadorEquipo1);
+                Presidente2.rechazarTraspaso(Jugador6, ListaJugadorEquipo2, ListaJugadorEquipo1);
 
                 // Ejercicio 5: contador de clases
 
                 System.out.println(
-                                "\n---------------------\n\nEl numero de clases instanciadas es: "
+                                "El numero de clases instanciadas es: "
                                                 + Jugador.getContador() + "\n\n---------------------\n");
 
         }
