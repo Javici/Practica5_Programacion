@@ -1,31 +1,24 @@
 package com.Clases;
 
+import java.util.ArrayList;
 import java.util.Date;
 import com.Enum.*;
+import com.Interfaces.GestorTraspasos;
 
-public class Entrenador extends Trabajador {
+public class Entrenador extends Trabajador implements GestorTraspasos {
     /**
      * Creamos los atributos de la clase entrenador
      * 
-     * private static int contadorEntrenador = 0;
-     * private String nombreEntrenador;
      * 
-     * public String getNombreEntrenador() {
-     * return nombreEntrenador;
-     * }
      * 
      * 
      * Setter del nombre del entrenador
      * 
-     * @param nombreEntrenador
+     * @param Nombre
      * 
-     *                         public void setNombreEntrenador(String
-     *                         nombreEntrenador) {
-     *                         nombreEntrenador = this.nombreEntrenador;
-     *                         }
+     * 
      */
 
-    private static int contadorEntrenador = 0;
     private Formaciones Formaciones;
 
     public Formaciones getFormaciones() {
@@ -45,7 +38,6 @@ public class Entrenador extends Trabajador {
             Formaciones Formaciones, Equipo Equipo, TipoTrabajador TipoTrabajador) {
         super(nombreEntrenador, FechaNacimiento, PaisOrigen, Equipo, TipoTrabajador);
         this.Formaciones = Formaciones;
-        contadorEntrenador++;
     }
 
     public String toString() {
@@ -78,9 +70,27 @@ public class Entrenador extends Trabajador {
         }
     }
 
-    // contador del numero de entrenadores
+    // implementacion del metodo mostarInfo
 
-    public static int getContadorEntrenador() {
-        return contadorEntrenador;
+    public void mostrarInfo() {
+        System.out.println(Nombre.toString() + "\n" + TipoTrabajador.toString());
+    }
+
+    public void apobarTraspaso(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+        if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El entrenador aprueba el fichaje");
+            Jugador.setTraspasos(Traspasos.APROBADO_POR_ENTRENADOR);
+        } else {
+            System.out.println("Este entrenador no puede decidir sobre el fichaje");
+        }
+    }
+
+    public void rechazarTraspaso(Jugador Jugador, ArrayList<String> lista1, ArrayList<String> lista2) {
+        if (Jugador.getTraspasos() == Traspasos.SOLICITADO && Jugador.getEquipo() == this.Equipo) {
+            System.out.println("El entrenador rechaza el fichaje\nEl fichaje queda cancelado");
+            Jugador.setTraspasos(Traspasos.RECHAZADO_POR_ENTRENADOR);
+        } else {
+            System.out.println("Este entrenador no puede decidir sobre el fichaje\nEl fichaje queda cancelado");
+        }
     }
 }

@@ -109,23 +109,8 @@ public class App {
                 ListaJugadorEquipo3.add(Jugador13.getNombre());
                 ListaJugadorEquipo3.add(Jugador14.getNombre());
 
-                // Ejercicio 4, toString con ejemplos mediante sout
-
                 System.out.println("\n-----------------------------\n");
 
-                // toString de datos de jugadores
-                /*
-                 * System.out.println(Jugador6.toString()); // todos los datos del jugador 6,
-                 * por ejemplo
-                 * System.out.println(Jugador3.getEquipo().getNombreEquipo() +
-                 * "\n\n-----------------------------\n"); // consulta
-                 * // del
-                 * // equipo
-                 * // del
-                 * // jugador
-                 * // 3
-                 */
-                // toString de la lista de jugadores
                 ListaJugadorEquipo1.toString();
                 ListaJugadorEquipo3.toString();
                 ListaJugadorEquipo2.toString();
@@ -135,7 +120,7 @@ public class App {
                                 + "\n\n-----------------------------\n");
                 System.out.println("La lista de jugadores del Little Giants es: " + ListaJugadorEquipo3
                                 + "\n\n-----------------------------\n");
-                // toString de los datos de presidentes
+
                 Presidente Presidente1 = new Presidente("987654321Z", "Camelia Travis",
                                 FechaNacimiento(1999, (5 - 1), 7), "Japon",
                                 InazumaJapon,
@@ -151,7 +136,7 @@ public class App {
                 System.out.println(Presidente1.toString());
                 System.out.println(Presidente2.toString());
                 System.out.println(Presidente3.toString());
-                // toString de la lista de entrenadores
+
                 Entrenador Entrenador1 = new Entrenador("Percival Travis", FechaNacimiento(1999, (5 - 1), 7),
                                 "Japon", Formaciones._434, InazumaJapon,
                                 TipoTrabajador.Entrenador);
@@ -165,7 +150,38 @@ public class App {
                 System.out.println(Entrenador2.toString());
                 System.out.println(Entrenador3.toString());
 
+                // Ej 2: llamada al metodo para comprobar nacionalidad
+
+                boolean nacionalidad = Jugador1.mismaNacionalidad(Entrenador3);
+                if (nacionalidad) {
+                        System.out.println("Estos trabajadores comparten la misma nacionalidad");
+                } else {
+                        System.out.println("Estos trabajadores no comparten la misma nacionalidad");
+                }
+
+                // comprobaciones Ej 2: mostrarInfo
+
+                Jugador1.mostrarInfo();
+                Entrenador2.mostrarInfo();
+                Presidente3.mostrarInfo();
+
+                // Ejercicio 4: gestionar traspasos por interfaz
+
+                System.out.println("////////////" + Jugador1.getEquipo().getNombre());
+                Jugador1.solicitarTraspaso(Jugador1);
+                Entrenador1.AprobarPorEntrenador(Jugador1);
+                Presidente1.AprobarPorPresidente(Jugador1, ListaJugadorEquipo1, ListaJugadorEquipo2);
+                System.out.println("////////////" + Jugador1.getEquipo().getNombre());
+
+                // Ejercicio 5: contador de clases
+
+                System.out.println(
+                                "\n---------------------\n\nEl numero de clases instanciadas es: "
+                                                + Jugador.getContador() + "\n\n---------------------\n");
+
         }
+
+        // funcion para establecer fechas
 
         public static Date FechaNacimiento(int ano, int mes, int dia) {
                 Calendar cal = Calendar.getInstance();

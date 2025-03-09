@@ -1,12 +1,12 @@
 package com.Clases;
 
+import java.util.ArrayList;
 import java.util.Date;
 import com.Enum.*;
+
 import java.util.Date;
 
 public class Jugador extends Trabajador {
-
-    private static int contadorJugador = 0;
 
     private Posiciones Posicion;
 
@@ -65,7 +65,6 @@ public class Jugador extends Trabajador {
             this.Dorsal = 0;
         }
         this.Traspasos = Traspasos.SIN_SOLICITAR;
-        contadorJugador++;
 
     }
 
@@ -94,10 +93,10 @@ public class Jugador extends Trabajador {
 
     }
 
-    // contador del numero de jugadores
+    // implementacion del metodo mostarInfo
 
-    public static int getContadorJugador() {
-        return contadorJugador;
+    public void mostrarInfo() {
+        System.out.println(Nombre.toString() + "\n" + TipoTrabajador.toString());
     }
 
 }
