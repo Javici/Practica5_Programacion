@@ -55,6 +55,18 @@ public class Jugador extends Trabajador {
         this.Traspasos = Traspasos;
     }
 
+    /**
+     * Constructor de la clase Jugador
+     * 
+     * @param Nombre
+     * @param FechaNacimiento
+     * @param Posicion
+     * @param Dorsal
+     * @param Pais
+     * @param Equipo
+     * @param TipoTrabajador
+     */
+
     public Jugador(String Nombre, Date FechaNacimiento, Posiciones Posicion, int Dorsal, String Pais,
             Equipo Equipo, TipoTrabajador TipoTrabajador) {
         super(Nombre, FechaNacimiento, Pais, Equipo, TipoTrabajador);
@@ -67,6 +79,10 @@ public class Jugador extends Trabajador {
         this.Traspasos = Traspasos.SIN_SOLICITAR;
 
     }
+
+    /**
+     * Metodo toString de la clase Jugador
+     */
 
     public String toString() {
 
@@ -88,7 +104,7 @@ public class Jugador extends Trabajador {
             this.Traspasos = Traspasos.SOLICITADO;
             System.out.println("Traspaso solicitado por el jugador " + Jugador.Nombre);
         } else {
-            System.out.println("Error");
+            System.out.println("El jugador " + Nombre + " ya esta solicitanto el traspaso");
         }
 
     }
@@ -96,7 +112,7 @@ public class Jugador extends Trabajador {
     // implementacion del metodo mostarInfo
 
     public void mostrarInfo() {
-        System.out.println(Nombre.toString() + "\n" + TipoTrabajador.toString());
+        System.out.println(Nombre.toString() + " es " + TipoTrabajador.toString());
     }
 
 }

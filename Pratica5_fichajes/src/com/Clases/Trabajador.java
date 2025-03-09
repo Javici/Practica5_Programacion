@@ -12,6 +12,12 @@ public abstract class Trabajador {
         return Nombre;
     }
 
+    /**
+     * Setter del Nombre del trabajador
+     * 
+     * @param Nombre
+     */
+
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
@@ -21,6 +27,12 @@ public abstract class Trabajador {
     public Date getFechaNacimiento() {
         return FechaNacimiento;
     }
+
+    /**
+     * Setter de la Fecha de nacimiento
+     * 
+     * @param FechaNacimiento
+     */
 
     public void setFechaNacimiento(Date FechaNacimiento) {
         this.FechaNacimiento = FechaNacimiento;
@@ -32,6 +44,12 @@ public abstract class Trabajador {
         return Pais;
     }
 
+    /**
+     * Setter del Pais de origen
+     * 
+     * @param Pais
+     */
+
     public void setPais(String Pais) {
         this.Pais = Pais;
     }
@@ -41,6 +59,12 @@ public abstract class Trabajador {
     public Equipo getEquipo() {
         return Equipo;
     }
+
+    /**
+     * Setter del Equipo del Trabajador
+     * 
+     * @param Equipo
+     */
 
     public void setEquipo(Equipo Equipo) {
         this.Equipo = Equipo;
@@ -52,9 +76,25 @@ public abstract class Trabajador {
         return TipoTrabajador;
     }
 
+    /**
+     * Setter del Tipo de trabajador
+     * 
+     * @param TipoTrabajador
+     */
+
     public void setTipoTrabajador(TipoTrabajador TipoTrabajador) {
         this.TipoTrabajador = TipoTrabajador;
     }
+
+    /**
+     * Constructor de la clase Trabajador
+     * 
+     * @param Nombre
+     * @param FechaNacimiento
+     * @param Pais
+     * @param Equipo
+     * @param TipoTrabajador
+     */
 
     public Trabajador(String Nombre, Date FechaNacimiento, String Pais, Equipo Equipo, TipoTrabajador TipoTrabajador) {
         this.Nombre = Nombre;
