@@ -71,7 +71,7 @@ public class Equipo {
     /**
      * Constructor del equipo
      * 
-     * @param NombreEquipo
+     * @param Nombre
      * @param Abreviatura
      */
     public Equipo(String Nombre, String Abreviatura) {

@@ -6,6 +6,7 @@ import com.Enum.TipoTrabajador;
 
 public abstract class Trabajador {
     protected String Nombre;
+    private static int contador = 0;
 
     public String getNombre() {
         return Nombre;
@@ -61,19 +62,25 @@ public abstract class Trabajador {
         this.Equipo = Equipo;
         this.Pais = Pais;
         this.TipoTrabajador = TipoTrabajador;
+        contador++;
 
     }
 
-    public void mismaNacionalidad(String Trabajador1, String Trabajador2) {
-        if (Pais.equals(Pais)) {
-            System.out.println("Mismo pais");
+    // declaracion del metodo mismaNacionalidad
 
-        } else {
-            System.out.println("Distinto pais");
-        }
+    public boolean mismaNacionalidad(Trabajador Trabajador) {
+        return this.Pais.equals(Trabajador.Pais);
 
     }
 
-    // public abstract String mostrarInfo(String Nombre, String Tipo);
+    // declaracion del metodo mostrarInfo
+
+    public abstract void mostrarInfo();
+
+    // declaracion del metodo contador
+
+    public static int getContador() {
+        return contador;
+    }
 
 }
